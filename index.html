@@ -24,38 +24,41 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- aos  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Rinky's Portfolio</title>
   </head>
   <body>
-    <nav id="sidebar">
+    <nav data-aos="fade-left" id="sidebar">
       <ul>
         <li class="nav-link">
           <a href="/"><i class="fas fa-home"></i></a>
           <span class="nav-title">Home</span>
         </li>
         <li class="nav-link">
-          <a href="/"><i class="fas fa-address-card"></i></a>
-          <span class="nav-title">Home</span>
+          <a href="#about"><i class="fas fa-address-card"></i></a>
+          <span class="nav-title">About</span>
         </li>
         <li class="nav-link">
-          <a href="/"><i class="fas fa-smile"></i></a>
-          <span class="nav-title">Home</span>
+          <a href="#skills"><i class="fas fa-tools"></i></a>
+          <span class="nav-title">Skills</span>
         </li>
         <li class="nav-link">
-          <a href="/"><i class="fas fa-home"></i></a>
-          <span class="nav-title">Home</span>
+          <a href="#projects"><i class="fas fa-meteor"></i></a>
+          <span class="nav-title">Projects</span>
         </li>
         <li class="nav-link">
-          <a href="/"><i class="fas fa-home"></i></a>
-          <span class="nav-title">Home</span>
+          <a href="#contact"><i class="fas fa-comment"></i></a>
+          <span class="nav-title">Contact</span>
         </li>
       </ul>
     </nav>
 
-    <header id="hero">
+    <header class="hero">
       <div class="container">
-        <h1>Hey,Guys I'm Rinky</h1>
-        <p>a UI/UX Desginer</p>
+        <h1 data-aos="zoom-in">Hey,Folk I'm Rinky</h1>
+        <p data-aos="zoom-in-up">a UI/UX Desginer</p>
       </div>
     </header>
     <section id="about">
@@ -65,8 +68,12 @@
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div class="content">
-          <img src="./assets/about.svg" alt="about picture" />
-          <p>
+          <img
+            data-aos="zoom-in"
+            src="./assets/about.svg"
+            alt="about picture"
+          />
+          <p data-aos="fade-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rem
             voluptatem corrupti laboriosam. Cupiditate, modi. Quisquam
             aspernatur molestias odio soluta ratione dolorem optio consequatur
@@ -87,27 +94,23 @@
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div class="content">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="fab fa-figma fa-2x"></i>
             <h3>Figma</h3>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="fab fa-figma fa-2x"></i>
             <h3>Figma</h3>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="fab fa-figma fa-2x"></i>
             <h3>Figma</h3>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="fab fa-figma fa-2x"></i>
             <h3>Figma</h3>
           </div>
-          <div class="card">
-            <i class="fab fa-figma fa-2x"></i>
-            <h3>Figma</h3>
-          </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <i class="fab fa-figma fa-2x"></i>
             <h3>Figma</h3>
           </div>
@@ -121,13 +124,13 @@
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div id="tab">
-          <span class="tab-item"> UI </span>
-          <span class="tab-item"> Vector </span>
-          <span class="tab-item"> UX </span>
-          <span class="tab-item"> Logos </span>
+          <span data-aos="fade-down" class="tab-item"> UI </span>
+          <span data-aos="fade-down" class="tab-item"> Vector </span>
+          <span data-aos="fade-down" class="tab-item"> UX </span>
+          <span data-aos="fade-down" class="tab-item"> Logos </span>
         </div>
         <div class="content">
-          <div class="card">
+          <div data-aos="zoom-in" class="card">
             <img
               src="https://caphe.sfo2.cdn.digitaloceanspaces.com/assets/images/openart-free-nft-ui-kit-thumb.png"
               alt=""
@@ -139,7 +142,7 @@
               neque perferendis quidem nostrum odit, temporibus porro?
             </p>
           </div>
-          <div class="card">
+          <div data-aos="zoom-in" class="card">
             <img
               src="https://caphe.sfo2.cdn.digitaloceanspaces.com/assets/images/openart-free-nft-ui-kit-thumb.png"
               alt=""
@@ -151,7 +154,7 @@
               neque perferendis quidem nostrum odit, temporibus porro?
             </p>
           </div>
-          <div class="card">
+          <div data-aos="zoom-in" class="card">
             <img
               src="https://caphe.sfo2.cdn.digitaloceanspaces.com/assets/images/openart-free-nft-ui-kit-thumb.png"
               alt=""
@@ -163,7 +166,7 @@
               neque perferendis quidem nostrum odit, temporibus porro?
             </p>
           </div>
-          <div class="card">
+          <div data-aos="zoom-in" class="card">
             <img
               src="https://caphe.sfo2.cdn.digitaloceanspaces.com/assets/images/openart-free-nft-ui-kit-thumb.png"
               alt=""
@@ -185,13 +188,38 @@
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div class="content">
-          <img src="./assets/contact.svg" alt="contact img" />
+          <img
+            data-aos="zoom-in"
+            src="./assets/contact.svg"
+            alt="contact img"
+          />
           <form action="">
-            <input type="text" placeholder="Name" class="input" />
-            <input type="email" placeholder="Email" class="input" />
-            <input type="tel" placeholder="Phone" class="input" />
-            <textarea placeholder="Message" rows="3"></textarea>
-            <button type="submit" class="btn">Submit</button>
+            <input
+              data-aos="fade-left"
+              type="text"
+              placeholder="Name"
+              class="input"
+            />
+            <input
+              data-aos="fade-right"
+              type="email"
+              placeholder="Email"
+              class="input"
+            />
+            <input
+              data-aos="fade-left"
+              type="tel"
+              placeholder="Phone"
+              class="input"
+            />
+            <textarea
+              data-aos="fade-right"
+              placeholder="Message"
+              rows="3"
+            ></textarea>
+            <button data-aos="fade-left" type="submit" class="btn">
+              Submit
+            </button>
           </form>
         </div>
       </div>
@@ -199,5 +227,10 @@
     <footer>
       <p>made with ❤ 2022</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
